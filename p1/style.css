@@ -74,7 +74,7 @@ button
 }
 #home 
 {
-    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    background: linear-gradient(to right, #84a0b4, #ffffff);
     padding: 40px 0;
 }
 .box img {
@@ -111,15 +111,16 @@ button
     text-align: center;
     font-size: 32px;
     margin-top: 30px;
-    color: #148c40;
+    color: #09120d;
 }
 #sect 
 {
     background-color: #949c9d;
 }
 #services {
-  background-color: #3385a3;
+  background-color: #21afb73d;
   padding: 40px 20px;
+ text-align: center;
 }
 
 .services-heading {
@@ -151,7 +152,7 @@ button
 }
 
 #about {
-  background-color: #8f8fa9;
+  background-color: azure;
   padding: 40px 20px;
 }
 
@@ -184,10 +185,10 @@ button
 
 
 #contact {
-  background-color: #2c2c2c;
+  background-color:#84a0b4;
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: black;
 }
 
 .contact-heading {
@@ -210,7 +211,7 @@ button
 }
 
 .contact-item a {
-  color: #64b5f6; 
+  color: black; 
   text-decoration: none;
 }
 
