@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style6.css">
-    <script src="script6.js"></script>
+    <style>
+        #result{
+            margin-left: 200px;
+            color: brown;
+        }
+    </style>
+    
 </head>
 <body>
-   
-    <input type="text" id="n1" placeholder="Enter the first number :"><br><br>
-    <input type="text" id="n2" placeholder="Enter the second number :"><br><br>
-    <button onclick="validate()">Submit</button>
+    <div id="math"></div>
+    Enter First Number:
+    <input type="text" placeholder="Enter number" id="num1">
+    <br><br>
+    Enter Second Number:
+    <input type="text" placeholder="Enter number" id="num2"><br><br>
+    <div class="sty">
+    <button onclick="calculateAll()">Submit</button>
+    </div>
     <div id="result"></div>
+    <script src="script.js"></script>
 </body>
 </html>

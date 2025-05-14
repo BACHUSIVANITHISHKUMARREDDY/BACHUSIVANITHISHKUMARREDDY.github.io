@@ -1,14 +1,12 @@
-const validate=()=>
-{
-    var n1=document.getElementById('n1').value;
-    var n2=document.getElementById('n2').value;
-    var sum=parseFloat(n1)+parseFloat(n2);
-    var sub=parseFloat(n1)-parseFloat(n2);
-    var mul=parseFloat(n1)*parseFloat(n2);
-     var div=parseFloat(n1)/parseFloat(n2);
-     document.getElementById('result').innerHTML = 
-        "Sum is: " + sum + "<br>" +
-        "Sub is: " + sub + "<br>" +
-        "Mul is: " + mul + "<br>" +
-        "Div is: " + div;
+
+function calculateAll(){
+    var a=Number(document.getElementById("num1").value); 
+    var b=Number(document.getElementById("num2").value);
+    var sum=a+b;
+    var dif=a-b;
+    var mul=a*b;
+    //var div=a/b;
+   document.getElementById("result").innerHTML=
+   "sum "+ sum +"<br>"+"Dif "+ dif+"<br>"+"mul "+ mul;
+
 }

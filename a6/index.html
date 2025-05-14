@@ -4,22 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style6.css">
+    <script src="script6.js"></script>
 </head>
 <body>
-    <h1></h1>
-    Enter email:<input type="text" placeholder="Enter Email" id="email">
-    <br><br>
-    Enter Password:<input type="password" placeholder="Enter Password" id="pass">
-    <br><br>
-    <button onClick="validate()">Submit</button>
-    <hr>
+   
+    <input type="text" id="n1" placeholder="Enter the first number :"><br><br>
+    <input type="text" id="n2" placeholder="Enter the second number :"><br><br>
+    <button onclick="validate()">Submit</button>
     <div id="result"></div>
-    <script>
-        function validate(){
-            let name=document.getElementById("email").value
-            let password=document.getElementById("pass").value
-            document.getElementById("result").innerHTML=name+"<br>"+password;
-        }
-    </script>
 </body>
 </html>
