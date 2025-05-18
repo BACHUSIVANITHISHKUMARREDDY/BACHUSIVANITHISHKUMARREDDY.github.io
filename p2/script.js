@@ -4,13 +4,16 @@ const products = [
   { id: 3, name: "p3", price: 75 },
 ];
 
- function showpro()
-    {
-        let x="";
-        for(let i=0;i<products.length;i++)
-        {
-            let pro=products[i];
-            x+=` <div class="box"><h2> ${pro.id}</h2> <h2> ${pro.name}</h2> <h2> ${pro.price}</h2> <button onClick="add(${pro.id})"> Add</button>  </div>`;
-        }
-        document.getElementById("root").innerHTML=x;
-    }
+const showProducts = () => {
+  let str = ""
+  products.map(value=>{
+    str += 
+    `<div>
+      <h3>${value.name}</h3>
+      <h4>${value.price}</h4>
+      <button>Add to Cart</button>
+     </div>
+    `
+  })
+  root.innerHTML = "<div class='row'>" + str + "</div>"
+};
