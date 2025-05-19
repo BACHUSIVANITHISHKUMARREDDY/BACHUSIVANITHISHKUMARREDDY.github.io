@@ -1,460 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online-Mart</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <section class="section1">
-        <div class="row">
-          <div class="logo">
-            <img src="images/logo.png" alt="Food mart" />
-          </div>
-          <div class="search">
-            <select class="all-select">
-              <option>All Categories</option>
-            </select>
-            <input
-              type="text" id="searchid"
-              placeholder="Search for more than 20,000 products"
-            />
-            <img
-              src="images/search.jpeg"
-              alt="search"
-              onclick="search(list)"
-              width="30px"
-              height="30px"
-            />
-          </div>
-          <div id="res" style="margin: 10px; font-weight: bold;"></div>
-          <div class="support">
-            <p>For support?</p>
-            <strong><p class="phone">+5647537495</p></strong>
-          </div>
-          <div class="user">
-            <img src="images/user.jpg" alt="user" width="30px" height="30px" />
-          </div>
-          <div class="like">
-            <img src="images/like1.png" alt="like" width="30px" height="30px" />
-          </div>
-          <select class="cart-select">
-            <option>Your Cart</option>
-          </select>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodMart Grocery Store</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts Example -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-flex">
+      <div class="logo"><img src="../food-mart/images/logo.png" alt="Smoothie"></div>
+      <nav>
+        <ul>
+          <li><a href="#">Shop by Departments</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Brand</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <span>Support: +980-34984089</span>
+        <span>Your Cart: $1290.00</span>
+      </div>
+    </div>
+    <div class="search-bar">
+      <select>
+        <option>All Categories</option>
+        <!-- Add more categories -->
+      </select>
+      <input type="text" placeholder="Search for more than 20,000 products">
+      <button>Search</button>
+    </div>
+  </header>
 
-      <section class="section2">
-        <div class="row">
-          <div class>
-            <select class="select">
-              <option>Shop by Departments</option>
-            </select>
-          </div>
-          <div>
-            <ul class="nav-list">
-              <li>Women</li>
-              <li>Men</li>
-              <li>Kids</li>
-              <li>Accessories</li>
-              <li>
-                <select>
-                  <option class="select">Pages</option>
-                </select>
-              </li>
-              <li>Brand</li>
-              <li>Sale</li>
-              <li>Blog</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </header>
+  <!-- Banner Section -->
+  <section class="banner">
+    <div class="banner-main">
+      <h3>100% Natural</h3>
+      <h1>Fresh Smoothie & Summer Juice</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <button>Shop Now</button>
+      <img src="../food-mart/images/product-thumb-1.png" alt="Smoothie">
 
-    <main>
-      <section class="main-banner">
-        <div class="left-banner">
-          <p class="highlight">100% Natural</p>
-          <h1>Fresh Smoothie <br />& Summer Juice</h1>
-          <p class="desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Dignissim
-            massa diam elementum.
-          </p>
-          <button class="shop-btn">SHOP NOW</button>
-          <div class="slider-dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <img
-            src="images/product-thumb-1.png"
-            alt="Smoothie Bottle"
-            class="juice-img"
-          />
-        </div>
+    </div>
+    <div class="banner-side">
+      <div class="banner-offer">
+        <h4>20% Off</h4>
+        <p>Fruits & Vegetables</p>
+        <a href="#">Shop Collection →</a>
+        
 
-        <div class="right-banner">
-          <div class="offer-box light-green">
-            <p class="discount">20% Off</p>
-            <p class="label">_____SALE</p>
-            <h3>Fruits &<br />Vegetables</h3>
-            <a href="#">Shop Collection →</a>
-            <img src="images/ad-image-1.png" alt="Fruits" />
-          </div>
+      </div>
+      <div class="banner-offer">
+        <h4>15% Off</h4>
+        <p>Baked Products</p>
+        <a href="#">Shop Collection →</a>
+      </div>
+    </div>
+  </section>
 
-          <div class="offer-box light-pink">
-            <p class="discount">15% Off</p>
-            <p class="label">_____SALE</p>
-            <h3>Baked<br />Products</h3>
-            <a href="#">Shop Collection →</a>
-            <img src="images/ad-image-2.png" alt="Bread" />
-          </div>
-        </div>
-      </section>
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Category</h2>
+    <div class="category-list">
+      <div class="category-card"><img src="../food-mart/images/icon-vegetables-broccoli.png" alt="image">Fruits & Veges</div>
+      <div class="category-card"><img src="../food-mart/images/icon-bread-baguette.png">Breads & Sweets</div>
+      <div class="category-card"><img src="../food-mart/images/icon-animal-products-drumsticks.png">Fruits & Veges</div>
+      <div class="category-card"><img src="../food-mart/images/icon-soft-drinks-bottle.png">Fruits & Veges</div>
+      <div class="category-card"><img src="../food-mart/images/icon-wine-glass-bottle.png">Fruits & Veges</div>
 
-      <section class="Categories">
-        <h3 style="padding-left: 20px;">Category</h3>
-        <div class="row">
-          <figure>
-            <div class="box1">
-              <img
-                src="images/icon-animal-products-drumsticks.png"
-                alt="icon-animal-products-drumsticks"
-              />
-            </div>
-            <caption>
-              Fruits & Veges
-            </caption>
-          </figure>
-          <figure>
-            <div class="box1">
-              <img
-                src="images/icon-bread-baguette.png"
-                alt="icon-bread-baguette"
-              />
-            </div>
-            <caption>
-              Breads &Sweets
-            </caption>
-          </figure>
-          <figure>
-            <div class="box1">
-              <img
-                src="images/icon-bread-herb-flour.png"
-                alt="icon-bread-herb-flour"
-              />
-            </div>
-            <caption>
-              Breads &Sweets
-            </caption>
-          </figure>
-          <figure>
-            <div class="box1">
-              <img
-                src="images/icon-soft-drinks-bottle.png"
-                alt="icon-soft-drinks-bottle"
-              />
-            </div>
-            <caption>
-              Breads &Sweets
-            </caption>
-          </figure>
-          <figure>
-            <div class="box1">
-              <img
-                src="images/icon-vegetables-broccoli.png"
-                alt="icon-vegetables-broccoli"
-              />
-            </div>
-            <caption>
-              Breads &Sweets
-            </caption>
-          </figure>
-          <figure>
-            <div class="box1">
-              <img
-                src="images/icon-wine-glass-bottle.png"
-                alt="icon-wine-glass-bottle"
-              />
-            </div>
-            <caption>
-              Breads &Sweets
-            </caption>
-          </figure>
-        </div>
-      </section>
-      <section class="NewArrival">
-        <h4>Newly Arrivals Brands</h4>
-        <div class="NewArrival">
-          <div class="row">
-            <div class="box2">
-              <figure>
-                <div class="product-card">
-                  <img src="images/product-thumb-11.jpg" alt="product-thumb-11" />
-                  <div class="product-info">
-                    <caption>
-                      Amber Jar
-                    </caption>
-                    <p>Honey best nectar you wish to get</p>
-                  </div>
-                </div>
-              </figure>
-            </div>
-            <div class="box2">
-              <figure>
-                <div class="product-card">
-                  <img src="images/product-thumb-12.jpg" alt="product-thumb-12" />
-                  <div class="product-info">
-                    <caption>
-                      Amber Jar
-                    </caption>
-                    <p>Honey best nectar you wish to get</p>
-                  </div>
-                </div>
-              </figure>
-            </div>
-            <div class="box2">
-              <figure>
-                <div class="product-card">
-                  <img src="images/product-thumb-13.jpg" alt="product-thumb-13" />
-                  <div class="product-info">
-                    <caption>
-                      Amber Jar
-                    </caption>
-                    <p>Honey best nectar you wish to get</p>
-                  </div>
-                </div>
-              </figure>
-            </div>
-            <div class="box2">
-              <figure>
-                <div class="product-card">
-                  <img src="images/product-thumb-14.jpg" alt="product-thumb-12" />
-                  <div class="product-info">
-                    <caption>
-                      Amber Jar
-                    </caption>
-                    <p>Honey best nectar you wish to get</p>
-                  </div>
-                </div>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
+    </div>
+  </section>
 
-      <section class="trending">
-        <h3 style="padding-left: 20px;">Trending Products</h3>
-        <div class="box-animation">
-          <div class="container">
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-bananas.png" alt="banana" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹36</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-avocado.png" alt="avagado" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹80</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-biscuits.png" alt="biscuits" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹180</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-cucumber.png" alt="cucumber" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹32</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-herb.jpg" alt="herb" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹50</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-honey.jpg" alt="honey" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹35</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-junk.jpg" alt="junk" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹43</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-milk.png" alt="milk" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹34</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-orange-juice.png" alt="orange-juice" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹180</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-raspberries.png" alt="raspberries" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹180</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-tomatoes.png" alt="tomato" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹43</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img
-                  src="images/thumb-tomatoketchup.png"
-                  alt="tomato-ketchup"
-                  class="arrival-image"
-                />
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹340</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-tuna.jpg" alt="tuna" class="arrival-image"/>
-                <div class="product-img-info">
-                  <caption>
-                    Sunstar Fresh Melon Juice
-                  </caption>
-                  <p>₹100</p>
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <section class="more-info">
-        <div class="info-con">
-          <div class="info-col">
-            <img src="images/logo.png" alt="logo"/>
-          </div>
-          <div class="info-col">
-            <h6>Ultras</h6>
-            <p>About us</p>
-            <p>Conditions</p>
-            <p>Our Journals</p>
-            <p>Careers</p>
-            <p>Affiliate Programme</p>
-            <p>Ultra Press</p>
-          </div>
-          <div class="info-col">
-            <h6>Customer Service</h6>
-            <p>FAQ</p>
-            <p>Contact</p>
-            <p>Privacy and Policy</p>
-            <p>Returns and Refunds</p>
-            <p>Cookie Guidelines</p>
-            <p>Delivery Information</p>
-          </div>
-          <div class="info-col">
-            <h6>Customer Service</h6>
-            <p>FAQ</p>
-            <p>Contact</p>
-            <p>Privacy and Policy</p>
-            <p>Returns and Refunds</p>
-            <p>Cookie Guidelines</p>
-            <p>Delivery Information</p>
-          </div>
-          <div class="info-col">
-            <h6>Subscribe Us</h6>
-            <p>Subscribe to our newsletter to get updates about our grand offers.</p>
-            <input text="email" placeholder="Enter email address" class="subscribe-input">
-            <button onclick="submit" class="sub-btn">Subscribe</button>
-          </div>
-        </div>
-      </section>
+  <!-- Newly Arrived Brands -->
+  <section class="brands">
+    <h2>Newly Arrived Brands</h2>
+    <div class="brand-list">
+      <div class="brand-card"><img src="../food-mart/images/product-thumb-11.jpg" width="200px">Amber Jar<br>Honey best nectar you wish to get</div>
+      <div class="brand-card"><img src="../food-mart/images/product-thumb-12.jpg" width="200px">Amber Jar<br>Honey best nectar you wish to get</div>
+      <div class="brand-card"><img src="../food-mart/images/product-thumb-13.jpg" width="200px">Amber Jar<br>Honey best nectar you wish to get</div>
+      <div class="brand-card"><img src="../food-mart/images/product-thumb-14.jpg" width="200px">Amber Jar<br>Honey best nectar you wish to get</div>
+    </div>
+  </section>
 
-    </main>
-    <footer style="text-align: center; background-color: burlywood;">&copy; 2025 @Online-Mart All rights reserved</footer>
-    <script src="script.js"></script>
-  </body>
+  <!-- Trending Products -->
+  <section class="products">
+    <h2>Trending Products</h2>
+    <div class="product-tabs">
+      <button class="active">All</button>
+      <button>Fruits & Veges</button>
+      <button>Juices</button>
+    </div>
+    <div class="product-grid">
+      <!-- Repeat this block for each product -->
+      <div class="product-card">
+      <img src="../food-mart/images/thumb-bananas.png" width="400px">
+        <h3>Sunstar Fresh Melon Juice</h3>
+        <span>$18.00</span>
+        <span>4.5 ★</span>
+      </div>
+      <div class="product-card">
+      <img src="../food-mart/images/thumb-biscuits.png" width="400px">
+        <h3>Sunstar Fresh Melon Juice</h3>
+        <span>$18.00</span>
+        <span>4.5 ★</span>
+      </div>
+      <div class="product-card">
+      <img src="../food-mart/images/thumb-avocado.png" width="400px">
+        <h3>Sunstar Fresh Melon Juice</h3>
+        <span>$18.00</span>
+        <span>4.5 ★</span>
+      </div>
+      <!-- ... -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">FOODMART</div>
+      <div class="footer-links">
+        <div>
+          <h4>Ultras</h4>
+          <ul>
+            <li>About us</li>
+            <li>Conditions</li>
+            <li>Our Journals</li>
+            <li>Careers</li>
+            <li>Affiliate Programme</li>
+            <li>Ultras Press</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Customer Service</h4>
+          <ul>
+            <li>FAQ</li>
+            <li>Contact</li>
+            <li>Privacy Policy</li>
+            <li>Returns & Refunds</li>
+            <li>Cookie Guidelines</li>
+            <li>Delivery Information</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe Us</h4>
+        <form>
+          <input type="email" placeholder="Email Address">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2023 Foodmart. All rights reserved.</span>
+    </div>
+  </footer>
+</body>
 </html>
